@@ -27,6 +27,7 @@ a {
   border-radius: 50px 50px 0 0;
   bottom: 0;
   width: clamp(340px, 50%, 420px);
+  transition: 0.5s;
 }
 
 .app {
