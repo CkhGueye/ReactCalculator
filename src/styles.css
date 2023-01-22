@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  font-family: sans-serif;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  content: "";
+  position: absolute;
+  height: 400px;
+  background: #f48cce;
+  border-radius: 50px 50px 0 0;
+  bottom: 0;
+  width: clamp(340px, 50%, 420px);
+}
+
+.app {
+  position: relative;
+}
+
+#calculator {
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #8080800a;
+  box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px,
+    rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
+  padding: 50px 15px 30px;
+  /*border: 3px solid #202020;*/
+  max-width: 235px;
+  /**/
+  backdrop-filter: blur(80px);
+  background: linear-gradient(#f48cce00, #fff);
+}
+
+#screen {
+  background-color: honeydew;
+  font-size: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  height: 70px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.block-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: repeat(5, 40px);
+  gap: 15px;
+}
+
+button {
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  border: unset;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 0 2px rgb(0 0 0 / 50%);
+}
+
+#add {
+  grid-column: 4;
+  grid-row: 2 / span 2;
+}
+
+#equals {
+  grid-column: 4;
+  grid-row: 4 / span 2;
+}
+
+#zero {
+  grid-column: span 2;
+}
+
+#seven,
+#eight,
+#nine {
+  grid-row: 2;
+}
+
+#four,
+#five,
+#six {
+  grid-row: 3;
+}
+
+.line {
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  bottom: -20px;
+  background-color: rgb(80, 92, 106);
+  border-radius: 35px;
+  height: 3px;
+  width: 90px;
+}
+
+.footer {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
