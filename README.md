@@ -1,5 +1,5 @@
 # ReactCalculator
-You can make calculations in this React project and perform any operations as a real calculator with all his constraints.
+In this React project, you can perform calculations and carry out mathematical operations just like a real calculator, complete with all its limitations.
 
 [Live View](https://ckhgueye.github.io/ReactCalculator/)
 
